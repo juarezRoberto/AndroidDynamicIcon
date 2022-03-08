@@ -21,7 +21,7 @@
         <activity-alias
             android:name=".FirstIconAlias"
             android:label="@string/app_name"
-            android:icon="@drawable/ic_new_icon_app"
+            android:icon="@drawable/ic_icon_1"
             android:enabled="false"
             android:targetActivity=".MainActivity"
             android:exported="true">
@@ -37,6 +37,21 @@
             android:name=".SecondIconAlias"
             android:label="@string/app_name"
             android:icon="@drawable/ic_icon_2"
+            android:enabled="false"
+            android:targetActivity=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity-alias>
+
+        <activity-alias
+            android:name=".ThirdIconAlias"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_icon_3"
             android:enabled="false"
             android:targetActivity=".MainActivity"
             android:exported="true">

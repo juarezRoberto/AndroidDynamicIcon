@@ -1,7 +1,12 @@
 package com.juarez.myapplication
 
 class FirstIconAlias
-
 class SecondIconAlias
+class ThirdIconAlias
 
-class ThreeLauncherAlias
+enum class AppIcons {
+    MainActivity,
+    FirstIconAlias,
+    SecondIconAlias,
+    ThirdIconAlias
+}

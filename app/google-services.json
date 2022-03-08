@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "620378824972",
+    "project_id": "dynamicappicon",
+    "storage_bucket": "dynamicappicon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620378824972:android:644ed36bff73a6896a2929",
+        "android_client_info": {
+          "package_name": "com.juarez.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620378824972-e8isik5j7fib4h0ihr783n5qv4sa55kt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI7vYh1tZcNYsXo949w_CklpdnpVYeBb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620378824972-e8isik5j7fib4h0ihr783n5qv4sa55kt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

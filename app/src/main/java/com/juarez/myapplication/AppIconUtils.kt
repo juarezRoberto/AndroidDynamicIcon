@@ -3,27 +3,24 @@ package com.juarez.myapplication
 import android.content.ComponentName
 import android.content.Context
 import android.content.pm.PackageManager
-import android.util.Log
 import android.widget.Toast
-
-enum class AppIcons {
-    MainActivity,
-    FirstIconAlias,
-    SecondIconAlias
-}
 
 object AppIconUtils {
     fun setNewIcon(context: Context, iconName: String) {
 
-        AppIcons.values().map {
+        val icons = AppIcons.values().map { it.toString() }
 
-            Log.d("iconname", it.toString())
+        if (!icons.contains(iconName)) {
+            Toast.makeText(context, "Icon not found", Toast.LENGTH_LONG).show()
+            return
+        }
+
+        icons.map { icon ->
             context.packageManager.setComponentEnabledSetting(
-                ComponentName(context, Constants.packagePath + it.toString()),
+                ComponentName(context, Constants.packagePath + icon),
                 PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
                 PackageManager.DONT_KILL_APP
             )
-
         }
 
         context.packageManager.setComponentEnabledSetting(
